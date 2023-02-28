@@ -18,7 +18,7 @@ class hackchat:  # a class
         self.leave_function = []
         self.error_function = []
         self.ws = websocket.create_connection("wss://hack.chat/chat-ws", sslopt={"cert_reqs": ssl.CERT_NONE})
-        self.send_packet({'cmd': 'join', 'nick': nick, 'pass': password, 'channel': channel})
+        self.send_packet({'cmd': 'join', 'nick': nick, 'pwd': password, 'channel': channel})
         threading.Thread(target=self.ping_thread).start()
 
     def send_message(self, msg, show=False):
