@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #Hi developer,here is an example bot. You can read this to learn how to write a bot easily.
-import XChat
+import hackchat
 import time
 
 #This func is used to get messages.
